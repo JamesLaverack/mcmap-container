@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     make \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone http://github.com/spoutn1k/mcmap /mcmap
+RUN git clone --depth 1 http://github.com/spoutn1k/mcmap /mcmap
 WORKDIR /mcmap
 
 RUN make -j
