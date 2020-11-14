@@ -5,7 +5,7 @@ on:
     branches: main
 
 jobs:
-  multi-registries:
+  publish-container-images:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
